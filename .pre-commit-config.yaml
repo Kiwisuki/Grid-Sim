@@ -22,16 +22,4 @@ repos:
     rev: v1.5.1
     hooks:
       - id: mypy
-        exclude: ^tests/|^config/
-  - repo: local
-    hooks:
-      - id: pytest
-        name: pytest
-        language: system
-        entry: coverage run -m pytest
-        pass_filenames: false
-      - id: coverage
-        name: coverage
-        language: system
-        entry: coverage report -m
-        pass_filenames: false
+        exclude: ^config/

@@ -3,7 +3,7 @@ requires = ['poetry-core']
 build-backend = 'poetry.core.masonry.api'
 
 [tool.poetry]
-name = 'template_env'
+name = 'grid_sim_env'
 version = '1.6.1'
 description = 'Python dependency management and packaging made easy.'
 authors = ['Marius Arlauskas']
@@ -12,6 +12,9 @@ authors = ['Marius Arlauskas']
 python = '~3.9'
 
 [tool.poetry.group.dev.dependencies]
+matplotlib = "^3.8.2"
+seaborn = "^0.13.1"
+gif = "^23.3.0"
 
 
 [tool.poetry.group.linting.dependencies]
@@ -27,7 +30,7 @@ pre-commit = '^3.3.3'
 
 [tool.ruff]
 # Read more: 'https://beta.ruff.rs/docs/rules/'
-ignore = ['D104', 'D100', 'D103', 'G004', 'N999', 'I001', 'T201']
+ignore = ['D104', 'D100', 'D103', 'G004', 'N999', 'I001', 'T201', 'D205']
 select = [
     'B', # flake8-bugbear
     'C4', # flake8-comprehensions

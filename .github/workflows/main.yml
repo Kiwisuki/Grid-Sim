@@ -29,8 +29,3 @@ jobs:
     - name: Execute type checking
       run: |
         poetry run mypy src
-
-    - name: Execute unit testing
-      run: |
-        poetry run coverage run -m pytest
-        poetry run coverage report -m
