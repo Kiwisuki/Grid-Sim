@@ -16,6 +16,7 @@ matplotlib = "^3.8.2"
 seaborn = "^0.13.1"
 gif = "^23.3.0"
 alive-progress = "^3.1.5"
+pyarrow = "^15.0.0"
 
 
 [tool.poetry.group.linting.dependencies]

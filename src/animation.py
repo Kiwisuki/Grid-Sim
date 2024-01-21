@@ -67,4 +67,4 @@ def plot_comparison(
     ax3.set_xlim(0, SIM_DAYS)
     ax3.set_ylim(0, 27)
 
-    fig.suptitle('Free spread vs. isolated subgroups')
+    fig.suptitle('City Quarantine Simulation: Flattening The Curve', fontsize=16)
