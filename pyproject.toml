@@ -15,6 +15,7 @@ python = '~3.9'
 matplotlib = "^3.8.2"
 seaborn = "^0.13.1"
 gif = "^23.3.0"
+alive-progress = "^3.1.5"
 
 
 [tool.poetry.group.linting.dependencies]
@@ -30,7 +31,7 @@ pre-commit = '^3.3.3'
 
 [tool.ruff]
 # Read more: 'https://beta.ruff.rs/docs/rules/'
-ignore = ['D104', 'D100', 'D103', 'G004', 'N999', 'I001', 'T201', 'D205']
+ignore = ['D104', 'D100', 'D103', 'G004', 'N999', 'I001', 'T201', 'D205', 'G003']
 select = [
     'B', # flake8-bugbear
     'C4', # flake8-comprehensions
