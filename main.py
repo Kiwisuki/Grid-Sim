@@ -44,10 +44,10 @@ def run_simulation(gen_gif: bool = False):
     if gen_gif:
         frames = []
 
+    logging.info('Simulating days...')
     with alive_bar(SIM_DAYS) as bar:
         for _ in range(SIM_DAYS):
             bar()
-
             pop_a.update(INFECTION_RATE, RECOVERY_RATE, 0)
             grids_a.append(pop_a.get_matrix())
             ts_a.append(pop_a.count_states())
